@@ -1,0 +1,405 @@
+/*
+Theme Name: Simple and Clean
+Theme URI: http://www.attackoftheweb.net/
+Description: A minimalist WordPress theme.
+Version: 1.0
+Author: Ryan Lugg
+Author URI: http://www.attackoftheweb.net/
+Tags: minimalist, template, html5
+
+
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+
+
+
+/* == BASICS == */
+.fltRight {float:right;}
+.fltLeft {float:left;}
+.nPage {margin-right: 10px;}
+
+body {background-color: #F7F6F0;}
+
+* {margin: 0; padding: 0;}
+
+html, body {height: 100%;}
+
+nav {margin-bottom: 20px;}
+
+.primaryContent ol, ul, li  {list-style-type:disc;}
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px;}
+
+
+header, footer, section, article, aside, nav {
+	display: block;
+	}
+
+
+#cPosts {width: 730px; float: left;}
+#pPosts {width: 715px; float: left;}
+
+nav+section {
+	overflow: hidden;
+	width: 600px;
+	clear: none;
+	}
+
+.primaryContent {
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom:50px;
+	min-height: 100%
+	}
+
+/* == LINKS == */
+
+h1 a {font-size: 3em; color: black; text-decoration: none;}
+
+
+/* == HEADER == */
+
+#header {
+	width: 100%;
+	height: 198px;
+	color: #fff;
+
+	}
+#header a {color:#fff;font-family: Helvetica,Arial,sans-serif;font-size:18px;position:absolute;top:100px;left:193px;font-weight:bold;}
+
+#header h2 {
+	position: absolute;
+	top: 125px;
+	left: 193px;
+	}
+	
+/* == POSTS == */
+
+article[id*=post-] {
+	padding: 10px 0;
+	}
+article>header p, 
+article>footer p {
+	
+	}
+article+nav {
+	font-weight: bold;
+	}
+section>h1 {
+	padding-top: 10px;
+	font-size: 220%;
+	}
+section>h2 {
+	padding-top: 10px;
+	font-size: 190%;
+	}
+
+section>h3 {
+	padding-top: 10px;
+	font-size: 160%;
+	}
+
+section>h4 {
+	padding-top: 10px;
+	font-size: 140%;
+	}
+
+section>h5 {
+	padding-top: 10px;
+	font-size: 130%;
+	}
+
+
+section>h6 {
+	padding-top: 10px;
+	font-size: 120%;
+	}
+
+/* == NAVIGATION == */
+
+#navi { 
+	background : transparent;
+	width: 960px;
+	height : 77px;
+	list-style : none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top : 7px;
+	margin-bottom : 11px;
+	width : 100%;
+	}
+#navi ul {
+	background : transparent;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height : 57px;
+	line-height : 31px;
+	list-style : none;
+	padding : 0 10px;
+	font-size : 14px;
+	}
+
+#navi ul li{
+	display : inline;
+	padding : 0;
+	background : transparent;
+	}
+
+#navi ul a {
+	background : transparent;
+	height : 30px;
+	font-size : 16px;
+	color : #808080;
+	float : left;
+	padding : 11px 19px 11px 16px;
+	text-decoration : none;
+	border-top: 1px solid #252525;
+	border-bottom : 4px solid #252525;
+	border-left : 1px solid transparent;
+	border-right : 1px solid transparent;
+	border-radius : 4px;
+	-moz-border-radius : 4px;
+	-webkit-border-radius: 4px;
+	}
+
+#navi ul a:hover {
+	background : #252525;
+	border-top : 1px solid #252525;
+	border-bottom : 4px solid #000;
+	border-left : 1px solid #252525;
+	border-right : 1px solid #252525;
+	color : #FFF;
+	padding : 11px 19px 11px 16px;
+	border-radius : 4px;
+	-moz-border-radius : 4px;
+	-webkit-border-radius: 4px;
+	}
+
+/* == COMMENTS == */
+
+article[id*=comment-] {
+	margin: 15px 0;
+	padding: 10px;
+	}
+	article[id*=comment-] h4 {
+		margin: 0;
+		}
+	.alt {
+		border: 1px solid #ddd;
+		background: #eee;
+		}
+form[method=post] label {
+	display: block;
+	}
+form[method=post] input {
+	margin: 2px 0 12px 0;
+	display: block;
+	}
+
+/* == SIDEBAR == */
+
+aside {
+	position: absolute;
+	top: 300px;
+	right: 20px;
+	margin-top: 30px;
+	overflow: hidden;
+	width: 230px;
+	float: right;
+	clear: none;
+	margin-bottom: 20px;
+	}
+
+aside ul {
+	margin: 0;
+}
+
+	aside li {
+		list-style: none !important;
+		}
+		aside li ul li {
+			list-style:none !important;
+			}
+
+
+/* == SEARCH == */
+
+label[for=s] {
+	display: none;
+	}
+
+.searchTitle {
+	font-size:500%;
+ 	font-weight:bold;
+    	letter-spacing:-0.075em;
+    	padding:0px 0px 0px 55px;
+    	margin:0px 0px 15px -62px;
+	line-height: 105%;
+	}
+
+.searchContent {
+    width: 810px;
+    margin-left: 150px;
+    padding-bottom:50px;
+    min-height: 100%
+    }
+
+#searchPage ol.searchList {
+    margin:0px 0px 20px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+
+#searchPage ol.searchList li {
+    background:none;
+    padding:40px 0px 40px 0px;
+    position:relative;
+    border-bottom:1px solid #e4e4e0;
+}
+
+#searchPage ol.searchList li:last-child {
+    border-bottom:none;
+}
+
+#searchPage ol.searchList li p.published {
+    padding:0px 0px 0px 0px;
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+    text-shadow:none;
+    color:#292929;
+    position:absolute;
+    top:48px;
+    left:-183px;
+}
+
+#searchPage ol.searchList li p.published span {
+    background:#ffea00;
+    padding:2px 3px 2px 3px;
+}
+
+#searchPage ol.searchList li h3 {
+    margin:0px 0px 0px 183px;
+    font-size:250%;
+    width:530px;
+	line-height: 100%;
+}
+
+#searchPage ol.searchList li h3 a {
+    background:none;
+    border-bottom:none;
+    
+}
+
+#searchPage ol.searchList li h3 a:hover {
+    color:#ce3831;
+    text-shadow: #fff 0px 1px 0px;
+    
+}
+
+#searchPage ol.searchList li p {
+	margin-left: 183px;
+	}
+
+/* Archives Page */
+
+.archiveContent ol, ul, li  {list-style-type:none;}
+
+.archiveContent {
+	width: 810px;
+	margin-left: 150px;
+	padding-bottom:50px;
+	min-height: 100%
+	}
+
+
+#archive {
+	margin-top:30px;
+	}
+#archive .primaryContent {
+	width: 810px; !important
+	}
+
+#archive h1 {
+	font-size:500%;
+ 	font-weight:bold;
+    	letter-spacing:-0.075em;
+    	padding:0px 0px 0px 55px;
+    	margin:0px 0px 15px -62px;
+	line-height: 105%;
+	}
+
+#archive ul.archiveList  {
+    margin:0px 0px 20px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+
+#archive ul.archiveList li {
+    background:none;
+    padding:40px 0px 40px 0px;
+    position:relative;
+    border-bottom:1px solid #e4e4e0;
+}
+
+#archive ul.archiveList li:last-child {
+    border-bottom:none;
+}
+
+#archive ul.archiveList li p.published {
+    padding:0px 0px 0px 0px;
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+    text-shadow:none;
+    color:#292929;
+    position:absolute;
+    top:48px;
+    left:0;
+}
+
+#archive ul.archiveList li p.published span {
+    background:#ffea00;
+    padding:2px 3px 2px 3px;
+}
+
+#archive ul.archiveList li h3 {
+    margin:0px 0px 0px 183px;
+    font-size:250%;
+    width:530px;
+	line-height: 100%;
+}
+
+#archive ul.archiveList li h3 a {
+    background:none;
+    border-bottom:none;
+    
+}
+
+#archive ul.archiveList li h3 a:hover {
+    color:#ce3831;
+    text-shadow: #fff 0px 1px 0px;
+    
+}
+
+
+
+/* == FOOTER == */
+
+#footer {
+ 	background:#333;
+	color:white;	
+	width:100%;
+	position: fixed;
+	margin-top: 50px;
+        height: 50px;
+        clear:both;
+	bottom: 0;
+	}
+
+#footer p {margin-bottom: 5px; padding-top: 20px;}
+
+#footer a {color: white;}
